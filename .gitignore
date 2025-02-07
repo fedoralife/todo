@@ -4,6 +4,7 @@
 
 # Ignore CMake cache and temp files
 CMakeCache.txt
+.cache/
 CMakeFiles/
 Makefile
 *.cmake
