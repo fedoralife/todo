@@ -1,6 +1,7 @@
 # Ignore build files
 /build/
 /database/
+.cache/
 
 # Ignore CMake cache and temp files
 CMakeCache.txt
