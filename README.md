@@ -1,5 +1,5 @@
 # Project manager for C
-You have to know the basics of C++ and how Cmake work
+You have to know the basics of C and how Cmake work
 ## Refernce:
     - project managment :
         https://cmake.org/documentation/
