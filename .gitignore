@@ -1,13 +1,12 @@
 # Ignore build files
 /build/
 /database/
-.cache/
+/.cache/
 
 # Ignore CMake cache and temp files
 CMakeCache.txt
 .cache/
 CMakeFiles/
-Makefile
 *.cmake
 *.swp
 
