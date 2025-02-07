@@ -5,7 +5,6 @@
 
 # Ignore CMake cache and temp files
 CMakeCache.txt
-.cache/
 CMakeFiles/
 *.cmake
 *.swp
@@ -13,3 +12,4 @@ CMakeFiles/
 # Ignore IDE specific files
 .idea/
 .vscode/
+
