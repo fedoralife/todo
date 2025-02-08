@@ -2,7 +2,7 @@
 /build/
 /database/
 /.cache/
-
+todo.md
 # Ignore CMake cache and temp files
 CMakeCache.txt
 CMakeFiles/
