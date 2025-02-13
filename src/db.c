@@ -7,7 +7,8 @@ void databaseInit(sqlite3 *db, int rc, char *err_msg) {
   } else {
     printf("Opend database successfully\n");
   }
-  const char *sql = "CREATE TABLE IF NOT EXISTS COMPANY("
+  const char *sql = "CREATE TABLE IF NOT EXISTS USER("
+                    "UID INT NOT NULL,"
                     "NAME TEXT NOT NULL,"
                     "EMAIL TEXT NOT NULL"
                     ");";

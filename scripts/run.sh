@@ -7,4 +7,4 @@ fi
 
 cd build
 cd bin
-./app
+./obang

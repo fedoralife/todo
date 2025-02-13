@@ -1,12 +1,9 @@
 # Project manager for C
 You have to know the basics of C and how Cmake work
 ## Refernce:
-    - project managment :
-        https://cmake.org/documentation/
-    - GUI :
-        https://www.raylib.com/
-    - Database :
-        https://www.sqlite.org/
+    - [project managment](https://cmake.org/documentation/)
+    - [GUI](https://www.raylib.com/)
+    - [Database](https://www.sqlite.org/)
 ## Features:
     - Basic task manipulation using the crude operation
     - Uses raylib as a gui
@@ -23,4 +20,4 @@ To build the project, follow these steps:
    make
 4. Run the executable:
    ./obang
-
+### GUI - Configuration

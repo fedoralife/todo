@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(App VERSION 1.0)
+project(obang VERSION 1.0)
 
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD_REQUIRED True)
@@ -38,23 +38,37 @@ elseif (UNIX)
         message(FATAL_ERROR "Neither GCC nor Clang found! Please install a compiler.")
     endif()
 endif()
+find_package(raylib QUIET)
+
+if(NOT raylib_FOUND)
+    message(STATUS "Raylib not found, fetching from source...")
+
+    FetchContent_Declare(
+        raylib
+        GIT_REPOSITORY https://github.com/raysan5/raylib.git
+        GIT_TAG 4.5.0  # Change to the desired version
+    )
+
+    FetchContent_MakeAvailable(raylib)
+endif()
 
 # Locate source files
 file(GLOB SOURCES "src/*.c")
-file(GLOB SQLITE_SRC "assets/sqlite3.c")  # Add the sqlite3 source file
+file(GLOB SQLITE_SRC "vendor/sqlite3.c")  # Add the sqlite3 source file
 message(STATUS "Test include directories: ${CMAKE_CURRENT_SOURCE_DIR}/test1")
 
 file(GLOB TEST "test1/test.c")  # Adjusted to point to your test source files
 
 # Add executable target with source files, including sqlite3.c
-add_executable(app ${SOURCES} ${SQLITE_SRC} ${TEST})
+add_executable(obang ${SOURCES} ${SQLITE_SRC} ${TEST})
 
 # Link header file directories
-target_include_directories(app PRIVATE header assets test1)  # Make sure to include test1 where the header is located
+target_include_directories(obang PRIVATE include raylib vendor test1)  # Make sure to include test1 where the header is located
+target_link_libraries(obang raylib)
 
 if (MSVC)
-    target_compile_options(app PRIVATE /W4 /permissive-)
+    target_compile_options(obang PRIVATE /W4 /permissive-)
 else()
-    target_compile_options(app PRIVATE -Wall -Wextra -Wpedantic)
+    target_compile_options(obang PRIVATE -Wall -Wextra -Wpedantic)
 endif()
 
