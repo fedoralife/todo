@@ -1,6 +1,4 @@
-#include <GLFW/glfw3.h>
-#define GLFW_INCLUDE_NONE
-void guiinit(GLFWwindow* window);
-void guiupdate(GLFWwindow* window);
-void guiclean(GLFWwindow* window);
+void init_gui(void);
+void update_gui(void);
+void clean_gui(void);
 

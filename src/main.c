@@ -23,10 +23,5 @@ void init(void) {
   }
   sqlite3_close(db);
 }
-int main(void) {
-  GLFWwindow *window = glfwCreateWindow(640, 480, "Obang", NULL, NULL);
-  guiinit(window);
-  guiupdate(window);
-  guiclean(window);
-  return 0;
-}
+void test(void) {}
+int main(void) { return 0; }

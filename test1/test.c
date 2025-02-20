@@ -28,7 +28,7 @@ void deleteTest(sqlite3 *db, int rc, char *err_msg){
         fprintf(stderr, "SQL error: %s\n", err_msg);
         sqlite3_free(err_msg);
     } else {
-        fprintf(stdout, "Record deleted successfully\n");
+        fprintf(stdout, "Record delted successfully\n");
     }
 
     sql_delete = "DELETE FROM USER WHERE NAME like '%Bob';";
