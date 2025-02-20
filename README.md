@@ -103,8 +103,6 @@ This project is a task management application that combines the power of CMake f
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
 
-tadihailukebe@gmail.com
 
 
