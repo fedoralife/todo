@@ -1,5 +1,7 @@
 # Ignore build files
 /build/
+/test/
+test/
 /database/
 /.cache/
 todo.md
