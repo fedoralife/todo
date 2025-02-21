@@ -13,7 +13,9 @@ CMakeFiles/
 .idea/
 .vscode/
 .cache/clangd/index/
-todo.md
+**/todo.md
+TODO.md
+**/TODO.md
 # Test directories
 test/
 **/test/
