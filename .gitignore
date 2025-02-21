@@ -23,3 +23,9 @@ test/
 __tests__/
 *_test/
 *_tests/
+
+# Clangd cache directory
+.clangd/
+**/.clangd/
+.clangd
+**/.clangd
